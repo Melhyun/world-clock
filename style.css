@@ -1,3 +1,42 @@
+body {
+  background-color: #f9f7fe;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: rgb(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.time {
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 200px;
+  bottom: 50px;
+}
+span {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 275px;
+  bottom: 75px;
+}
+.date {
+  opacity: 0.8;
+}
+.city {
+  padding: 10px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.city:last-child {
+  border-bottom: none;
+}
 h1 {
   text-align: center;
 }
