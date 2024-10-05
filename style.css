@@ -28,7 +28,7 @@ span {
   bottom: 75px;
 }
 .date {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .city {
   padding: 10px;
@@ -37,10 +37,18 @@ span {
 .city:last-child {
   border-bottom: none;
 }
+select {
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
 h1 {
   text-align: center;
 }
 
 footer {
+  opacity: 0.7;
   text-align: center;
 }
