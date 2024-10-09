@@ -27,8 +27,8 @@ body {
   font-size: 35px;
   font-weight: bold;
   display: flex;
-  justify-content: flex-end; /* Aligns time to the right */
-  margin-bottom: -10px; /* Adjust this value to move the time higher */
+  justify-content: flex-end; 
+  margin-bottom: -10px; 
 }
 
 small {
