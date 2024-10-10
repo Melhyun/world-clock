@@ -1,6 +1,6 @@
 function update() {
+  let sydney = document.querySelector("#sydney");
   if (sydney) {
-    let sydney = document.querySelector("#sydney");
     let sydneyTimeElement = sydney.querySelector(".time");
     let sydneyDateElement = sydney.querySelector(".date");
 
@@ -10,8 +10,9 @@ function update() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  let chicago = document.querySelector("#chicago");
   if (chicago) {
-    let chicago = document.querySelector("#chicago");
     let chicagoTimeElement = chicago.querySelector(".time");
     let chicagoDateElement = chicago.querySelector(".date");
 
@@ -25,6 +26,9 @@ function update() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cleanCity = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let cityElement = document.querySelector(".container");
